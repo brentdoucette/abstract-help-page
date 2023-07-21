@@ -13,13 +13,11 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1.em;
 }
 
 .container {
   width: 90%;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 
 .container-nav {
@@ -79,8 +77,7 @@ body {
 
 .container-main {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 80px;
+  margin: 80px auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -98,4 +95,27 @@ body {
 
 .card-content a {
   text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  border-radius: 0 0 10px 10px;
+}
+
+.footer-container {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-card h4 {
+  margin-bottom: 10px;
+}
+
+.footer-tag {
+  align-self: flex-end;
 }
