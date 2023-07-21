@@ -13,4 +13,89 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1.1.em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.container-nav {
+  background-color: black;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.logo i {
+  margin-right: 5px;
+}
+
+.btn {
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: var(--btn-color);
+}
+
+.btn-secondary {
+  background-color: black;
+  border: 1px solid #ffffff90;
+  margin-right: 10px;
+}
+
+.hero {
+  height: 200px;
+  background-color: var(--hero-color);
+}
+
+.container-hero {
+  padding: 60px 40px;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container-hero h1 {
+  font-size: 30px;
+}
+
+.container-hero input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 15px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.container-main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card-content p {
+  margin: 10px 0;
+}
+
+.card-content a {
+  text-decoration: none;
 }
