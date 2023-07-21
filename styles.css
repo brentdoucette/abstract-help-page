@@ -18,6 +18,7 @@ body {
 .container {
   width: 90%;
   margin: 40px auto;
+  max-width: 1100px;
 }
 
 .container-nav {
@@ -34,11 +35,16 @@ body {
   margin-right: 5px;
 }
 
+input:focus {
+  outline: none;
+}
+
 .btn {
   padding: 5px 15px;
   color: white;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -105,11 +111,15 @@ footer {
 
 .footer-container {
   width: 90%;
-  height: 200px;
   margin: 0 auto;
   padding: 30px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footer-card {
+  margin-right: 20px;
 }
 
 .footer-card h4 {
@@ -118,4 +128,21 @@ footer {
 
 .footer-tag {
   align-self: flex-end;
+}
+
+@media (max-width: 550px) {
+  .container-nav {
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .container-hero {
+    width: 80%;
+  }
+  .container-main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
